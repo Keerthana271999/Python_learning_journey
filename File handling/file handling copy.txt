@@ -1,0 +1,36 @@
+File handling
+------------------------------------------------------------
+
+Need - used to store small amount of data permanently
+
+Types of files - Text (.txt), Binary (Images / audio / video / csv / zip)
+
+3 basic operations - open a file, perform operations, close the file
+
+open the file using in-built function open
+
+f=open(filename,mode) f - filepointer / cursor
+
+in filename if the file is in other location soecify with path i.e. absolute path
+
+close the file using close method
+
+f.close()
+
+Here opening and closing a file is done programatically not physically
+
+----------------------------------------------------------------------------7 modes
+
+r - read
+default mode
+if the file is there opens and reads
+if the file is not there gives FileNotFoundError
+
+
+
+w - write
+
+if the file is the there and if there is some content as soon as you specify mode it clears the content and whatever you write later will be inserted i.e. overwrite
+if the file is not there it creates and then writes
+
+IF YOU EXECUTE WRITE OPERATION MUTIPLE TIMES ALSO DATA WILL BE PRESENT ONLY ONCE SINCE IT OVERWRITES
