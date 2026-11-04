@@ -8,5 +8,9 @@ desired group size = how many are expected to be formed
 '''
 students = int(input("Number of students enrooled to a course: "))
 group_size = int(input("Desired group size: "))
-formed = students/group_size
-print("Number of groups formed per course:", ceil(formed))
+try:
+    formed = students/group_size
+    print("Number of groups formed per course:", ceil(formed))
+except ZeroDivisionError as msg:
+    print(f"Error: {msg.__class__.__name__}")
+    print(f"Details: {msg}")
