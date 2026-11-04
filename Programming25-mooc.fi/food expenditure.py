@@ -14,5 +14,5 @@ price = float(input("Enter the price of one meal: "))
 grocery = float(input("Enter the amount spent on groceries during the week: "))
 weekly = (no_of_times*price)+grocery
 daily = weekly/7
-print(f"Daily {daily} euros.")
-print(f"Weekly {weekly} euros.")
+print(f"Daily {round(daily, 3)} euros.")
+print(f"Weekly {round(weekly, 3)} euros.")
